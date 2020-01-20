@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>269</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tic Tac Toe</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblUserMarker">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>You</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="scoreUser">
+           <property name="font">
+            <font>
+             <family>Segoe Print</family>
+             <pointsize>14</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="lblComputerMarker">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Computer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="scoreComputer">
+           <property name="font">
+            <font>
+             <family>Segoe Print</family>
+             <pointsize>14</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btnPos1">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QPushButton" name="btnPos6">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="Line" name="line_19">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="Line" name="line_18">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="6">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="btnPos4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="6">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btnPos2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="btnPos7">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="btnPos3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btnPos5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="Line" name="line_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QPushButton" name="btnPos9">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="btnPos8">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnNewGame">
+        <property name="text">
+         <string>New Game</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnQuit">
+        <property name="text">
+         <string>Quit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <widget class="QLabel" name="lblMarker1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMarker2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
